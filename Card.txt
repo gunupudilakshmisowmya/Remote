@@ -1,0 +1,21 @@
+public class Card {
+	int seq;
+	String[] pip = {"ACE","1","2","3","4","5","6","7","8","9","10","JACK","QUEEN","KING"};
+	String[] suite = {"club", "DIAMOND","HEART","SPADE"};
+	Card( int seq) {
+	this.seq = seq;
+	}
+	public string getSuite(int s) {
+	
+	return suite[s/13];
+	
+	}
+	public string getPip(int s) {
+	
+	return pip[s/13];
+	
+	}
+	
+
+}
+
