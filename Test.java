@@ -1,8 +1,8 @@
  import java.util.Random;
 	class Card {
 	static int seq;
-	static String[] pip = new String[] {"ACE","1","2","3","4","5","6","7","8","9","10","JACK","QUEEN","KING"};
-	static String[] suite = new String[] {"club", "DIAMOND","HEART","SPADE"};
+	static String[] pip = new String[]        {"ACE","2","3","4","5","6","7","8","9","10","JACK","QUEEN","KING","JOKER","JOKER"};
+	static String[] suite = new String[] {"club", "DIAMOND","HEART","SPADE",""};
 	public Card( int seq) {
 	this.seq = seq;
 	}
@@ -13,16 +13,16 @@
 		return pip[s % 13];	
 	}
 	public static String display(int s) {
-	int i = seq / 13;
+	int i = s / 13;
 	String suit = suite[i];
-	String p = pip [seq % 13];
+	String p = pip [s % 13];
 	String card = p + " " +suit;
 	return card;
 	}
 	public static void generateRandomCards() {
 		int[] randomcards = new int[13];
 		for (int i = 0; i < 13; i++) {
-		randomcards[i] = 1+(int)(Math.random()*52);
+		randomcards[i] = 1+(int)(Math.random()*53);
 		System.out.println(display(randomcards[i]));
 		}
 	
