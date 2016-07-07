@@ -1,1 +1,11 @@
-Keerthana
+public class Test {
+	public static void main (String args[]) {
+		Card c = new Card (Integer.parseInt(args[0]));
+		c.getSuit;
+		c.getPip;
+		c.display;
+		System.out.println(" " + c.getSuit());
+		System.out.println(" " + c.getPip());
+		System.out.println(" " + c.display());
+	}
+}
