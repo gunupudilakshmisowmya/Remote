@@ -1,1 +1,10 @@
-Sowmya
+public static String diaplay() {
+
+suit = suite[seq/13];
+pip = pip[seq % 13];
+
+String card = pip + " " +suit;
+
+return card;
+
+}
