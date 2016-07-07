@@ -5,17 +5,17 @@ public class Card {
 	Card( int seq) {
 	this.seq = seq;
 	}
-	public string getSuite(int s) {
-	
-	return suite[s/13];
-	
+	public string getSuite() {
+	return suite[seq/13];
 	}
-	public string getPip(int s) {
-	
-	return pip[s/13];
-	
+	public string getPip() {
+		return pip[seq/13];	
 	}
-	
-
+	public static String diaplay() {
+	String suit = suite[seq/13];
+	String pip = pip[seq % 13];
+	String card = pip + " " +suit;
+	return card;
+	}
 }
 
