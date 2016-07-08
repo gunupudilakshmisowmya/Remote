@@ -1,0 +1,31 @@
+public class Card {
+	int seq;
+	String[] pip = {"ACE","1","2","3","4","5","6","7","8","9","10","JACK","QUEEN","KING"};
+	String[] suite = {"club", "DIAMOND","HEART","SPADE"};
+	Card( int seq) {
+	this.seq = seq;
+	}
+	public string getSuite() {
+	return suite[seq/13];
+	}
+	public string getPip() {
+		return pip[seq/13];	
+	}
+	public static String diaplay() {
+	String suit = suite[seq/13];
+	String pip = pip[seq % 13];
+	String card = pip + " " +suit;
+	return card;
+	}
+}
+public class Test {
+	public static void main (String args[]) {
+		Card c = new Card (Integer.parseInt(args[0]));
+		c.getSuit;
+		c.getPip;
+		c.display;
+		System.out.println(" " + c.getSuit());
+		System.out.println(" " + c.getPip());
+		System.out.println(" " + c.display());
+	}
+}
