@@ -10,19 +10,24 @@ public class  hand13(String[] args) {
     
     
 }
-
+/*
 public static int istriplet(aftersort[]) {
-    for(int i = 0;i < aftersort.size-1;i++) {
-         for(int j = i+1;j < aftersort.size();j++) { 
-              if(aftersort[i].equals(aftersort[j].equals(aftersort[j+1])) && (i!=j) {
-                   System.out.println("triplet card is:" +aftersort[j]);
-               }
+    for(int i = 1;i < aftersort.size;i++) {
+
+              if(aftersort[i] == aftersort[i-1] && aftersort[i] == aftersort[i+1] {
+
+                   System.out.println("triplet card is:" +aftersort[i]);
+             
         }
    }
 }
 
 public static int islife(aftersort[]) {
-    int[] naturalseq = {0,1,2,3,4,5,6,7,8,9,10,11,12,13};
+    int[] naturalseq = {0,1,2,3,4,5,6,7,8,9,10,11,12,13};*/
+
+
+
+
      
     
 
