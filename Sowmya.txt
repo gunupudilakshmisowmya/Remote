@@ -1,10 +1,28 @@
-public static String diaplay() {
-
-suit = suite[seq/13];
-pip = pip[seq % 13];
-
-String card = pip + " " +suit;
-
-return card;
-
+public class  hand13(String[] args) {
+    int[] hand13 = {1,51,34,51,8,4,6,7,8,51,9,5,0};
+    for(i = 0;i < hand13.size();i++) 
+    int[] pip13 = getpip(i);
+    int[] aftersort = Arrays.sort(pip13);
+    System.out.println(aftersort);
+    System.out.pritnln(istriplet(aftersort));
+    System.out.pritnln(islife(aftersort));
+    
+    
+    
 }
+
+public static int istriplet(aftersort[]) {
+    for(int i = 0;i < aftersort.size-1;i++) {
+         for(int j = i+1;j < aftersort.size();j++) { 
+              if(aftersort[i].equals(aftersort[j].equals(aftersort[j+1])) && (i!=j) {
+                   System.out.println("triplet card is:" +aftersort[j]);
+               }
+        }
+   }
+}
+
+public static int islife(aftersort[]) {
+    int[] naturalseq = {0,1,2,3,4,5,6,7,8,9,10,11,12,13};
+     
+    
+
